@@ -27,4 +27,4 @@ jobs:
     - name: install firebase
       run: npm i firebase-tools -g  
     - name: deploy
-      run: firebase deploy --only functions:helloWorldHarshita --token '1//0gVhYPNgn_zYACgYIARAAGBASNwF-L9IrmP4dsKTUmIJXWmInN4PtqjfWyHgeb26jdzH2stkrEyf12WbfKdfiFQ6h6xtPYEJxkcc'
+      run: firebase deploy --only functions:helloWorldHarshita --token '1//0gGpD-4SraNXaCgYIARAAGBASNwF-L9Iri1dUE-TslTR4cUrUkr4A1jf83uRUq1G3noVOxUiQqh54Zovgo3pfQnst3XNgX6ZlNW8'
