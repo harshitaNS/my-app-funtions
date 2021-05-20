@@ -28,6 +28,6 @@ jobs:
       run: npm i firebase-tools -g  
     - name: deploy
       #run: firebase deploy --only functions:helloWorldHarshita --token '1//0gGpD-4SraNXaCgYIARAAGBASNwF-L9Iri1dUE-TslTR4cUrUkr4A1jf83uRUq1G3noVOxUiQqh54Zovgo3pfQnst3XNgX6ZlNW8'
-      run: npx firebase-tools deploy --only functions:helloWorldHarshita --token "$FIREBASE_TOKEN"
+      run: npx firebase-tools deploy --only functions:helloWorldHarshita --token "${{env.FIREBASE_TOKEN}}"
       env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_CAREAR_PLAYGROUND }}
