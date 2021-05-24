@@ -27,12 +27,9 @@ jobs:
     #- name: install firebase
     #  run: npm i firebase-tools -g  
     - name: deploy
-      run: firebase deploy --only functions:helloWorldHarshita --token '1//0gq5OzUdWcRpACgYIARAAGBASNwF-L9IrtmlW_jOqO_DZkFHfDD4P-AOHE-8rhf6M6ZzqMHYlTjUF4vSJTWg1YtGgyIkOpkt9qno'
-     # run: npx firebase-tools deploy --only functions:helloWorldHarshita --token "${{env.FIREBASE_TOKEN}}"
-     # env:
-        #  FIREBASE_TOKEN: ${{ secrets.FIREBASE_CAREAR_PLAYGROUND }}
-     # uses: w9jds/firebase-action@master
-    #  with:
-     #     args: deploy --only functions:helloWorldHarshita
-    #  env:
-     #     GCP_SA_KEY: ${{ secrets.FIREBASE_CAREAR_PLAYGROUND }}
+    #  run: firebase deploy --only functions:helloWorldHarshita --token '1//0gq5OzUdWcRpACgYIARAAGBASNwF-L9IrtmlW_jOqO_DZkFHfDD4P-AOHE-8rhf6M6ZzqMHYlTjUF4vSJTWg1YtGgyIkOpkt9qno'
+      uses: w9jds/firebase-action@master
+      with:
+          args: deploy --only functions:helloWorldHarshita
+      env:
+          GCP_SA_KEY: ${{ secrets.FIREBASE_CAREAR_PLAYGROUND }}
