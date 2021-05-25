@@ -1,0 +1,12 @@
+ gitApproval:
+    name: Git Approval
+    runs-on: ubuntu-latest
+    needs: functionalTestsStaging
+    environment:
+      name: Dev
+      url: https://firstprojfirebase.web.app
+    steps:
+    # Checkout
+    - name: Checkout
+      uses: actions/checkout@v1
+      
