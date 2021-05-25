@@ -24,7 +24,12 @@ jobs:
     - name: install libraries
       run: npm install
       working-directory: ${{env.working-directory}}
-    - name: install firebase
-      run: npm i firebase-tools -g  
+    #- name: install firebase
+    #  run: npm i firebase-tools -g  
     - name: deploy
-      run: firebase deploy --only functions:helloWorldHarshita --token '1//0gVhYPNgn_zYACgYIARAAGBASNwF-L9IrmP4dsKTUmIJXWmInN4PtqjfWyHgeb26jdzH2stkrEyf12WbfKdfiFQ6h6xtPYEJxkcc'
+    #  run: firebase deploy --only functions:helloWorldHarshita --token '1//0gq5OzUdWcRpACgYIARAAGBASNwF-L9IrtmlW_jOqO_DZkFHfDD4P-AOHE-8rhf6M6ZzqMHYlTjUF4vSJTWg1YtGgyIkOpkt9qno'
+      uses: w9jds/firebase-action@master
+      with:
+          args: deploy --only functions:helloWorldHarshita
+      env:
+          GCP_SA_KEY: ${{ secrets.FIREBASE_CAREAR_PLAYGROUND }}
