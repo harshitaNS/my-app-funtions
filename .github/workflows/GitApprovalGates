@@ -1,4 +1,5 @@
  gitApproval:
+ #'on': push
     name: Git Approval
     runs-on: ubuntu-latest
     needs: functionalTestsStaging
