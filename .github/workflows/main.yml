@@ -1,18 +1,19 @@
 name: Deploy function to Google	
 
+# Run this workflow every time a new commit pushed to your repository
 #'on': push
-on: 
-  workflow_dispatch
-		
+on: workflow_dispatch
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
     env:
       working-directory: ./functions
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
