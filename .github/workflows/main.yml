@@ -5,7 +5,6 @@ name: Deploy function to Google
 		
 jobs:
   build:
-
     runs-on: ubuntu-latest
     env:
       working-directory: ./functions
