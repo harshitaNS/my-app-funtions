@@ -1,7 +1,7 @@
-name: Deploy to Google	
-# Run this workflow every time a new commit pushed to your repository
+name: Deploy function to Google	
+
 #'on': push
-on: workflow_dispatch
+'on': workflow_dispatch
 		
 jobs:
   build:
