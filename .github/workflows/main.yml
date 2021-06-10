@@ -1,7 +1,7 @@
 name: Deploy function to Google	
 
 #'on': push
-'on': 
+on: 
   workflow_dispatch
 		
 jobs:
