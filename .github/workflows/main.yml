@@ -31,5 +31,5 @@ jobs:
       with: 
            args: deploy --only functions:helloWorldHarshita
       env:
-           GCP_SA_KEY: ${{ secrets.FIREBASE_CAREAR_HYPERSPACE }}
+           GCP_SA_KEY: ${{ secrets.FIREBASE_CAREAR_PLAYGROUND }}
 
